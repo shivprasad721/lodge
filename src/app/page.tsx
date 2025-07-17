@@ -1,4 +1,7 @@
 import Image from "next/image";
+import * as React from 'react';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 export default function Home() {
   return (
@@ -51,6 +54,11 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <Stack spacing={2} direction="row">
+        <Button variant="text">Text</Button>
+        <Button variant="contained">Contained</Button>
+        <Button variant="outlined" className="bg-red-500">Outlined</Button>
+      </Stack>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
